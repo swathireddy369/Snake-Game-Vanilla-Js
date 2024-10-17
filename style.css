@@ -73,7 +73,9 @@ width:200px;height: 200px;
 
 }
 .footer_text {
-color:red !important;
+    font-weight: bold;
     position: relative;
     top: 3rem;
+    color: #abb78a;
+    font-size: 20px;
 }
