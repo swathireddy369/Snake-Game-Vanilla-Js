@@ -31,7 +31,7 @@ body{
 .border3,#logo{
     background-color: #c4cfa3;
 }
-.box{
+#box{
     display: grid;
     grid-template-columns: repeat(20,20px);
     grid-template-rows:repeat(20,20px);
@@ -61,8 +61,10 @@ font-weight: bolder;
 #logo{
 position: absolute;
 width:200px;height: 200px;
+/* display: none; */
 }
 #instruction__text{
+    /* display: none; */
     position: absolute;
     top:60%;
     color:#333;
@@ -78,4 +80,14 @@ width:200px;height: 200px;
     top: 3rem;
     color: #abb78a;
     font-size: 20px;
+}
+.snake,body{
+    background-color: rgb(75, 71, 71);
+}
+.snake{
+border :0.1px dotted #5a5a5a
+}
+.food{
+    background-color: #dedede;
+    border:1px solid white;
 }
