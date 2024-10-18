@@ -23,6 +23,7 @@ const setPosition = (pixel, el) => {
 const createGameElement = (tag, className) => {
     let el = document.createElement(tag);
     el.className = className;
+    el.id = "child1";
     return el;
 }
 const generateFood = () => {
@@ -75,6 +76,8 @@ const move = () => {
 
 };
 const resetGame = () => {
+    clearInterval(gameInteral)
+    boardEle.innerHTML = '';
     hasGameStarted = false;
     logoel.style.display = "block"
     instrutionel.style.display = "block"
@@ -82,7 +85,7 @@ const resetGame = () => {
     currentScore = 0;
     dir = "right";
     snake = [{ x: 10, y: 10 }];
-    clearInterval(gameInteral)
+   
 
 }
 const checkCollision = () => {
