@@ -118,6 +118,7 @@ const updateScore = () => {
     highScore = Math.max(highScore, currentScore)
     currentScore = 0;
     highScoreel.style.display = "block";
+    currentScoreel.innerHTML=currentScore.toString().padStart(3,"0")
     highScoreel.innerHTML = highScore.toString().padStart(3, "0");
 }
 const checkCollision = () => {
