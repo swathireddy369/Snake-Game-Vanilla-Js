@@ -13,7 +13,7 @@ let snake = [{ x: 10, y: 10 }];
 let food = generateFood();
 let dir = "right";
 let gameInterval;
-let gameSpeedDelay = 250;
+let gameSpeedDelay = 280;
 let gameStarted = false;
 
 //Draw game map, snake, food
@@ -129,16 +129,17 @@ function handleKeyPress(event) {
 document.addEventListener("keydown", handleKeyPress);
 
 function increaseSpeed() {
-  //   console.log(gameSpeedDelay);
+    console.log(gameSpeedDelay);
   if (gameSpeedDelay > 150) {
-    gameSpeedDelay -= 5;
+    gameSpeedDelay -= 9;
   } else if (gameSpeedDelay > 100) {
-    gameSpeedDelay -= 3;
+    gameSpeedDelay -= 5;
   } else if (gameSpeedDelay > 50) {
-    gameSpeedDelay -= 2;
+    gameSpeedDelay -= 3;
   } else if (gameSpeedDelay > 25) {
-    gameSpeedDelay -= 1;
+    gameSpeedDelay -= 2;
   }
+  console.log("after",gameSpeedDelay);
 }
 
 function checkCollision() {
